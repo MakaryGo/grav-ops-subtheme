@@ -7,12 +7,15 @@ author:
  name: Makary
  email: dev@makary.online
  url: https://makary.online
+homepage: 'https://github.com/makarygo/grav-ops-subtheme'
+demo: ''
+bugs: 'https://github.com/MakaryGo/grav-ops-subtheme/issues'
 license: WTFPL
 dependencies:
   ops:
     name: quark-open-publishing
     url: https://github.com/MakaryGo/grav-theme-quark-open-publishing
-    path: user/themes/ops-subtheme
+    path: user/themes/quark-open-publishing
     branch: development
 
 extends@:
