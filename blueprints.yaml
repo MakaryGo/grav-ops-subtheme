@@ -1,0 +1,20 @@
+name: OPS subtheme
+version: 0.1.0-dev
+testing: true
+description: "Customizing Quark Open Publishing"
+icon: flask
+author:
+ name: Makary
+ email: dev@makary.online
+ url: https://makary.online
+license: WTFPL
+dependencies:
+  ops:
+    name: quark-open-publishing
+    url: https://github.com/MakaryGo/grav-theme-quark-open-publishing
+    path: user/themes/ops-subtheme
+    branch: development
+
+extends@:
+  type: blueprints
+  context: themes://quark-open-publishing    
