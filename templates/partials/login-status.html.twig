@@ -1,0 +1,9 @@
+{# This template will work only if you have [Login plugin](https://github.com/getgrav/grav-plugin-login) installed and enabled #}
+{# TODO:
+    - Add link to login form if user is not authenticated
+#}
+<span class="login-status">
+    {% if grav.user.authenticated %}
+        <strong> <a href="{{ config.plugins.login.route_profile }}">{{ grav.user.fullname ?: grav.user.username }}</a></strong>, <a class="logout" href="{{ uri.addNonce((base_url_relative ~ uri.path)|trim('/') ~ '/task' ~ config.system.param_sep ~ 'login.logout', 'logout-form', 'logout-nonce')|e }}">{{ 'PLUGIN_LOGIN.BTN_LOGOUT'|t }}</a>
+    {% endif %}
+</span>

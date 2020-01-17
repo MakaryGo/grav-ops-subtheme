@@ -3,6 +3,7 @@
 
 1. [](#improved)
   * Added `show_hero` flag to _Blog_ (listing) pages, now it must be specifically set to `true` in order to display _Hero_ area
+  * Replaced static username with link to user profile as set in [Login plugin](https://github.com/getgrav/grav-plugin-login) configuration
 
 #  v0.1.0-dev
 ## 01-12-2019
