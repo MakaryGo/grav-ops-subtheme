@@ -1,5 +1,5 @@
 name: OPS Subtheme
-version: 0.1.0-dev
+version: 0.1.1-dev
 testing: true
 description: "Customizing Quark Open Publishing"
 icon: flask
@@ -17,3 +17,16 @@ dependencies:
 extends@:
   type: blueprints
   context: themes://quark-open-publishing
+
+form:
+  fields:
+    tabs:
+      fields:
+        custommenu_options:
+          fields:
+            menu:
+              fields:
+                .icon:
+                  replace-type@: true
+# We'll replace Icon field with new IconPicker field type [docs](https://learn.getgrav.org/16/forms/blueprints/fields-available#special-form-fields-available-exclusively-in-the-admin)
+                  type: iconpicker
